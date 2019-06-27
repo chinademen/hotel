@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { isPc } from './config.js';
-import H5 from './h5'
-import Web from './web'
+import { isPc,webConfig } from '@/config.js';
+import '@/assets/common/common.less'
+import H5 from '@/h5'
+import Web from '@/web'
 
 function Root () {
-    return isPc() ? <Web /> : <H5 />
+    return isPc() ? <Web config={ webConfig } /> : <H5 config={webConfig} />
 }
 
 ReactDOM.render(

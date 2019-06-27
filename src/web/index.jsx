@@ -1,10 +1,16 @@
-import React from 'react';
+import React,{ Fragment } from 'react';
+import Header from "@/web/component/Header"
+import Introduce from "@/web/component/Body/Introduce"
+import Power from "@/web/component/Body/Power"
 
-function App() {
+function App({ config:{ header,body } }) {
+  
   return (
-    <div className="App">
-        web
-    </div>
+    <Fragment>
+      <Header { ...header } />
+      <Introduce {...body.introduce}/>
+      <Power {...body.power} />
+    </Fragment>
   );
 }
 
