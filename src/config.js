@@ -130,6 +130,10 @@ export const webConfig = {
                     { title:'浙江湖州红木房雅阁璞邸酒店',img:require('@/assets/web/case8.png') },
                 ]
             }
+        },
+        // 联系我们
+        contactUs:{
+            
         }
     }
 }
