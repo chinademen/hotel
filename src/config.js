@@ -8,6 +8,15 @@ export function isPc() {
     }
     return flag;
 }
+
+// 数组分割
+export function arraySlice( array,subGroupLength ) {
+    let [index,newArray] = [0,[]];
+    while ( index < array.length ){
+        newArray.push(array.slice(index,index += subGroupLength));
+    };
+    return newArray
+}
                                     
 export const webConfig = {
     header:{
@@ -33,7 +42,7 @@ export const webConfig = {
             content:'雅阁酒店集团（澳大利亚），拥有全球9大酒店品牌，覆盖奢华酒店、城市精品酒店、度假村等中高端酒店。一方面成为酒店专业人才的培养与输送基地 ，挖掘酒店高级管理人员，另一方面整合社会资源发挥经验优势，为全球业主提供与酒店管理相关的一系列服务。',
 
         },
-        // 集团实力
+        // 集团实力 集团荣耀
         power:{
             bgImg:require('@/assets/web/bg2.png'),
             bgList:{
@@ -47,7 +56,109 @@ export const webConfig = {
                     { title:'14.23亿',des:'雅阁品牌价值14.23亿元' },
                     { title:'3000+万',des:'雅阁会员3000+万人' },
                 ]
+            },
+            slickList:[
+                { time:'2017 / 2016',words:'服务业卓越成就大奖',by:'— 中国澳大利亚商会' },
+                { time:'2017',words:'国家级服务业出口贸易大奖',by:'— 澳洲政府' },
+                { time:'2017 / 2018',words:'旅游业“最佳雇主”',by:'— 最佳东方' },
+                { time:'2015 / 2014 / 2013',words:'中国酒店集团60强',by:'— 中国旅游饭店业协会' },
+
+                { time:'2016',words:'服务业卓越成就大奖',by:'— 中国澳大利亚商会' },
+                { time:'2016',words:'服务业卓越成就大奖',by:'— 中国澳大利亚商会' },
+                { time:'2016',words:'服务业卓越成就大奖',by:'— 中国澳大利亚商会' },
+                { time:'2016',words:'服务业卓越成就大奖',by:'— 中国澳大利亚商会' },
+
+                { time:'2016',words:'服务业卓越成就大奖',by:'— 中国澳大利亚商会' },
+                { time:'2016',words:'服务业卓越成就大奖',by:'— 中国澳大利亚商会' },
+            ]
+        },
+
+        // 盈利模式
+        profitability:{
+            slickList:[
+                { dots:require('@/assets/web/mode1.png'),bgimg:require('@/assets/web/pro1.png') },
+                { dots:require('@/assets/web/mode2.png'),bgimg:require('@/assets/web/pro2.png') },
+                { dots:require('@/assets/web/mode3.png'),bgimg:require('@/assets/web/pro3.png') },
+                { dots:require('@/assets/web/mode4.png'),bgimg:require('@/assets/web/pro4.png') },
+                { dots:require('@/assets/web/mode5.png'),bgimg:require('@/assets/web/pro5.png') },
+                { dots:require('@/assets/web/mode6.png'),bgimg:require('@/assets/web/pro6.png') },
+                { dots:require('@/assets/web/mode7.png'),bgimg:require('@/assets/web/pro7.png') },
+                { dots:require('@/assets/web/mode8.png'),bgimg:require('@/assets/web/pro8.png') },
+                { dots:require('@/assets/web/mode9.png'),bgimg:require('@/assets/web/pro9.png') },
+            ]
+        },
+        // 加盟支持
+        support:{
+            positionList:[
+                { title:'品牌优势',des:'雅阁是享誉世界的优秀酒店代名词',img:require('@/assets/web/support1.png') },
+                { title:'高投资回报率',des:'免费为用户提供高性价比加盟方案，为广大业主带来了稳定，高额的投资回报，一般2～3年回本。',img:require('@/assets/web/support2.png') },
+                { title:'成熟的运营模式',des:'拥有国际知名酒店销售代理商支持的全球化市场销售体系，整店复制输出，保障业主投资收益。',img:require('@/assets/web/support3.png') },
+                { title:'顾问级咨询支持',des:'为成员酒店提供全程建设服务，以及各项评估审核、市场分析、运营管理等咨询服务。',img:require('@/assets/web/support4.png') },
+                { title:'标准化的管理系统',des:'完善的管理体系实现成员酒店销售、供应链、技术支持及人才培训的统一管理。',img:require('@/assets/web/support5.png') },
+                { title:'人才培训体系',des:'引进澳洲体系化的酒店职业教育与培训，与国内多所大学联合办学，输出酒店管理专业人才。',img:require('@/assets/web/support6.png') },
+                { title:'定制化的合作模式',des:'由顶尖设计团队量身打造，实现视觉体系标准统一，据业主需求开展服务技能培训、技术指导等。',img:require('@/assets/web/support7.png') },
+            ]
+        },
+        // 投资回报
+        investment:{
+            investmentList1:[
+                {title:'全球分销系统',des:'拥有国际知名酒店销售代理商支持的 全球化市场销售体系。'},
+                {title:'中央订房系统',des:'全国400免费订房专线、移动网站、 WAP短信预订系统。'},
+                {title:'集团营销体系',des:'提供规划设计、建筑施工、开发筹备及日常 运作过程中涉及产品。'},
+                {title:'计划预算管理',des:'技术服务、开业管理和运营，各阶段都须通过 计划与预算来管理。'},
+                {title:'集团供应链系统管理',des:'拥有国际知名酒店销售、代理商支持的全球化 市场销售体系。'},
+                
+            ],
+            investmentList2:[
+                {title:'统一识别系统',des:'由欧洲顶尖设计团队量身打造，实现酒店视觉 体系的标准统一。'},
+                {title:'品牌标准手册',des:'集团管理标准体系，涵盖酒店各部门的一切政策和程序。'},
+                {title:'质量监控系统',des:'集团统一组织和知道，对成员酒店进行年度检查和测评。'},
+                {title:'技术支持系统',des:'实施专业志愿计划，是成员酒店获得最低成本及最快的技术支持。'},
+                {title:'人才培训系统',des:'逐月进行的专题培训会，为您的酒店注入世界一流的管理经验。'},
+            ],
+            casekey:{
+                title:'案例展示',
+                des:'截止到2019年6月，加盟酒店遍布101座城市，共144家酒店，23250间客房',
+                list:[
+                    { title:'海南三亚亚龙湾雅阁温泉度假酒店',img:require('@/assets/web/case1.png') },
+                    { title:'福建南平雅阁国际大酒店',img:require('@/assets/web/case2.png') },
+                    { title:'广东广州白云机场航湾澳斯特精选酒店',img:require('@/assets/web/case3.png') },
+                    { title:'广东广州南沙古格雅阁酒店',img:require('@/assets/web/case4.png') },
+                    { title:'贵州遵义国贸雅阁大酒店',img:require('@/assets/web/case5.png') },
+                    { title:'江苏镇江西津渡雅阁璞邸酒店',img:require('@/assets/web/case6.png') },
+                    { title:'陕西西安沣东澳斯特酒店',img:require('@/assets/web/case7.png') },
+                    { title:'浙江湖州红木房雅阁璞邸酒店',img:require('@/assets/web/case8.png') },
+                ]
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+
+
+
+
+
+
+
+

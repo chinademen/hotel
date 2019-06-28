@@ -1,0 +1,160 @@
+.investment{
+    background: url('~@/assets/web/bg6.png') no-repeat center;
+    background-size: cover;
+}
+.investment_top{
+    width: 100%;
+	height: 727px;
+    background: url('~@/assets/web/bg5.png') no-repeat center;
+    background-size: cover;
+    .top_main{
+        width: 1200px;
+        height: 727px;
+        margin: 0 auto;
+        overflow: hidden;
+ 
+        >h3{
+            font-size: 36px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 30px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 40px;
+        }
+        >p{
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 30px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 8px;
+        }
+        ul{
+            width: 557px;
+            height: 470px;
+            float: left;
+            background: #ffffff;
+            margin-top: 47px;
+            padding: 0 85px 0 40px;
+            box-sizing: border-box;
+            position: relative;
+            img{
+                position: absolute;
+                right: 60px;
+                top: 0px;
+            }
+            li{
+                padding: 24px 0 27px 0;
+                cursor: pointer;
+                h3{
+                    font-size: 22px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                    color: #222222;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: normal;
+                    letter-spacing: 0px;
+                    color: #808080;
+                    width: 320px;
+                    display: none;
+                }
+                &:not(last-child){
+                    border-bottom: 1px solid rgba(34, 34, 34,0.04);
+                }
+            }
+            .active_li{
+                p{
+                    display: block;
+                }
+                h3{
+                    color: #941b20;
+                }
+            }
+        }
+        .ul_left{
+            margin-right: 43px;
+        }
+    }
+}
+.investment_bottom{
+    width: 100%;
+	height: 759px;
+    .bottom_main{
+        width: 1200px;
+        margin: 0 auto;
+        >h3{
+            font-size: 36px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 30px;
+            letter-spacing: 1px;
+            color: #000000;
+            padding-top: 42px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        >p{
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 30px;
+            letter-spacing: 1px;
+            color: #808080;
+            margin-top: 8px;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+        .Slider{
+            width: 1200px;
+            height: 512px;
+            margin: 0 auto;
+            .Slider_item{
+                outline: none;
+                img{
+                    display: block;
+                    height: 453px;
+                    width: 1200px;
+                }
+                p{
+                    height: 59px;
+                    line-height: 59px;
+                    text-align: center;
+                    background: #ffffff;
+                    font-size: 20px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 1px;
+                    color: #000000;
+                }
+            }
+            .slick-dots{
+                width: 100%;
+                bottom: -65px;
+                .dots_ul{
+                    margin: 0;
+                    li{
+                        span{
+                            display: block;
+                            width: 15px;
+                            height: 15px;
+                            background-color: #ffffff;
+                        }
+                    }
+                    .slick-active{
+                        span{
+                            background-color: #8d1a19;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
