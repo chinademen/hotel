@@ -24,7 +24,7 @@ const settings = {
 
 function Power({ bgList,slickList }) {
   return (
-    <div className="hotel_power">
+    <div className="hotel_power" id="power">
       <div className="powebg">
         <div className="main">
           <div className="list">

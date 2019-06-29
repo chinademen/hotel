@@ -12,7 +12,7 @@ function App({ config:{ header,body } }) {
   
   return (
     <Fragment>
-      <Header { ...header } />
+      <Header { ...header }/>
       <Introduce {...body.introduce}/>
       <Power {...body.power} />
       <Profitability {...body.profitability} />

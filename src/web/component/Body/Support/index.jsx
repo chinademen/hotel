@@ -36,7 +36,7 @@ class SupportForm extends Component {
 function Support({ positionList  }) {
 
     return (
-        <div className="support">
+        <div className="support" id="support">
             <div className="support_main">
                 <h3> <b> 7 </b>  大优势，助力无忧创业 </h3>
                 <p> 雅阁酒店集团拥有成熟的运营模式和盈利模式， 帮助业主实现无忧创业 </p>

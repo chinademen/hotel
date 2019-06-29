@@ -4,7 +4,7 @@ import './introduce.less'
 function Introduce({ menu,title,des,bgImg,content }) {
  
   return (
-    <div className="hotel_introduce">
+    <div className="hotel_introduce" id="introduce">
         <ul>
             {
               menu.map((ele,i)=>{

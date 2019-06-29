@@ -1,0 +1,103 @@
+.contactUs {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+}
+.contactUs h3 {
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #000000;
+  margin-top: 32px;
+  text-align: center;
+}
+.contactUs ul {
+  overflow: hidden;
+  padding: 0 106px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.contactUs ul li {
+  width: 382px;
+  float: left;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  display: flex;
+  margin-top: 10px;
+}
+.contactUs ul li span {
+  font-size: 20px;
+  color: #222222;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+.contactUs ul li input {
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: #999999;
+  min-width: 100px;
+}
+.contactUs ul li:nth-child(odd) {
+  margin-right: 112px;
+}
+.contactUs ul li:nth-child(even) {
+  margin-left: 112px;
+}
+.contactUs ul li select {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #999999;
+  min-width: 100px;
+}
+.contactUs .others {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  display: flex;
+  width: 993px;
+  margin: 0 auto;
+}
+.contactUs .others span {
+  font-size: 20px;
+  color: #222222;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+.contactUs .others input {
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: #999999;
+  min-width: 100px;
+}
+.contactUs .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 48px;
+}
+.contactUs .button button {
+  width: 168px;
+  height: 53px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  border: none;
+  margin: 0 24px;
+  cursor: pointer;
+}
+.contactUs .button button:nth-child(1) {
+  background-color: #181819;
+}
+.contactUs .button button:nth-child(2) {
+  background-color: #941b20;
+}

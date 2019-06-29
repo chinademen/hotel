@@ -3,6 +3,16 @@ import './header.less'
 
 function Header({ logo,contact,menu,words }) {
   const { group1,group2 }  = words; 
+  const  scrollToAnchor = (anchorName) => {
+    if (anchorName) {
+        // 找到锚点
+        let anchorElement = document.getElementById(anchorName);
+      
+        // 如果对应id的锚点存在，就跳转到锚点
+        if(anchorElement) { anchorElement.scrollIntoView({block: "end", behavior: "smooth"}); }
+    }
+  }
+
   return (
     <div className="hotel_header">
         <header className="header">
@@ -10,7 +20,7 @@ function Header({ logo,contact,menu,words }) {
             <ul>
                 {
                     menu.map((ele,i)=>{
-                        return( <li key={ i }> { ele.title } </li> );
+                        return( <li onClick={ () => scrollToAnchor(ele.code) } key={ i }> { ele.title } </li> );
                     })
                 }
             </ul>

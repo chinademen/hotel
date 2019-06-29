@@ -4,7 +4,7 @@ import './footer.less'
 function Footer() {
  
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
         <div className="footer_main">
             <ul>
                 <li>  

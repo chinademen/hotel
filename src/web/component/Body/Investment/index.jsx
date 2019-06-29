@@ -38,7 +38,7 @@ class Investment extends Component{
         const { investmentList1,investmentList2,casekey } = this.props;
         const { activeCode1,activeCode2 } = this.state;
         return (
-            <div className="investment">
+            <div className="investment" id="investment">
                <div className="investment_top">
                     <div className="top_main">
                         <h3> 多方位管理支持，全力保障开业收益 </h3>
