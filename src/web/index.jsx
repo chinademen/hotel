@@ -7,6 +7,7 @@ import Support from "@/web/component/Body/Support"
 import Investment from "@/web/component/Body/Investment"
 import ContactUs from "@/web/component/Body/ContactUs"
 import Footer from "@/web/component/Footer"
+import Modal from "@/web/component/Modal"
 
 function App({ config:{ header,body } }) {
   
@@ -20,6 +21,7 @@ function App({ config:{ header,body } }) {
       <Investment {...body.investment} />
       <ContactUs />
       <Footer />
+      <Modal />
     </Fragment>
   );
 }
